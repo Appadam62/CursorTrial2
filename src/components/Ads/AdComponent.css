@@ -1,0 +1,135 @@
+.ad-container {
+  margin: var(--spacing-4) 0;
+  text-align: center;
+  min-height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-container .adsbygoogle {
+  display: block;
+  margin: 0 auto;
+}
+
+/* Placeholder styling for test mode */
+.ad-placeholder {
+  background: linear-gradient(135deg, var(--color-neutral), var(--color-bg-secondary));
+  border: 2px dashed var(--color-border);
+  border-radius: var(--border-radius-lg);
+  padding: var(--spacing-6);
+  margin: var(--spacing-4) 0;
+  text-align: center;
+  min-height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.ad-placeholder-content {
+  color: var(--color-text-muted);
+}
+
+.ad-placeholder-content h4 {
+  margin: 0 0 var(--spacing-2) 0;
+  color: var(--color-text);
+  font-size: var(--font-size-lg);
+}
+
+.ad-placeholder-content p {
+  margin: var(--spacing-1) 0;
+  font-size: var(--font-size-sm);
+}
+
+.ad-placeholder-content small {
+  font-size: var(--font-size-xs);
+  opacity: 0.7;
+}
+
+/* Ad positioning classes */
+.ad-header {
+  margin-bottom: var(--spacing-6);
+}
+
+.ad-sidebar {
+  margin: var(--spacing-4) 0;
+}
+
+.ad-content {
+  margin: var(--spacing-6) 0;
+}
+
+.ad-footer {
+  margin-top: var(--spacing-6);
+}
+
+.ad-inline {
+  margin: var(--spacing-4) 0;
+  display: inline-block;
+}
+
+/* Responsive ad sizes */
+.ad-responsive {
+  width: 100%;
+  max-width: 728px;
+  margin: 0 auto;
+}
+
+.ad-mobile {
+  width: 100%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+/* AdSense specific styling */
+.adsbygoogle {
+  background-color: transparent;
+}
+
+/* Loading state */
+.ad-loading {
+  background-color: var(--color-neutral);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-4);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+/* Error state */
+.ad-error {
+  background-color: var(--color-bg-secondary);
+  border: 1px solid var(--color-border);
+  border-radius: var(--border-radius-md);
+  padding: var(--spacing-4);
+  text-align: center;
+  color: var(--color-text-muted);
+  font-size: var(--font-size-sm);
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+  .ad-container {
+    margin: var(--spacing-3) 0;
+  }
+  
+  .ad-placeholder {
+    padding: var(--spacing-4);
+    min-height: 100px;
+  }
+  
+  .ad-responsive {
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .ad-container {
+    margin: var(--spacing-2) 0;
+  }
+  
+  .ad-placeholder {
+    padding: var(--spacing-3);
+    min-height: 80px;
+  }
+} 
